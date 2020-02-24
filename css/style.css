@@ -1,0 +1,538 @@
+/* 
+1-common
+2-General style
+3-Sections
+    -home
+    -about
+    -services
+    -pricing
+    -contact
+    -footer 
+*/
+
+/* common */
+.container{
+    width: 80%;
+    margin: auto;
+}
+.hover-bg:hover{
+    background-color: var(--my-orange);
+}
+.section-header{
+    width: 70%;
+    position: relative;
+    text-align: center;
+    margin:0 auto;
+}
+.section-header:after{
+    content: "";
+    position: absolute;
+    background-color: var(--my-orange);
+    left: 38%;
+    width: 25%;
+    height: 1px;
+    border-bottom:1px solid var(--my-orange);
+}
+.black{
+    color:black
+}
+.white{
+    color:#fff;
+}
+.section-title{
+    font-size:35px;
+    transform: scaleY(1.5);
+    text-transform: uppercase;
+    padding-top:80px;
+    padding-bottom:20px ;
+}
+.section-des{
+    margin: 3% 0;
+    color:#c7c2c2;
+}
+/* End common */
+
+/* General style */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+section{
+    margin:0;
+}
+
+body{
+    font-family: 'Varela Round', sans-serif;
+    --my-orange:rgb(236, 141, 16);
+    --my-grey:#afaeae;
+}
+a{
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+}
+button{
+    font-family: inherit;
+    cursor: pointer;
+    color:#fff;
+}
+.clear{
+    clear: both;
+}
+/* End General */
+
+/* home */
+.home{
+    width: 100%;
+    height: 650px;
+    background-color: #d6d3d383;
+    background-image: url("../img/Banner-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 90%;
+}
+nav{
+    text-align: right;
+    background-color: black;
+}
+nav .logo{
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 10px;
+    text-transform: uppercase;
+    float: left;
+    margin-left: 5%; 
+}
+nav .ne{
+    color: var(--my-orange);
+}
+nav a{
+    color: #fff;
+    padding: 10px;
+    height: 100%;
+    margin-right: 3%;
+    line-height: 2;
+}
+nav a.last{
+    margin-right: 20%;
+}
+nav a:hover{
+    background-color: rgba(188, 223, 224, 0.589);
+}
+.hvr-underline-from-left:before{
+    background-color:var(--my-orange) ;
+    height: 3px;
+}
+
+.home-content{
+    margin: auto;
+    overflow: hidden;
+    height: 600px;
+    width: 100%;
+}
+.home-content-text{
+    width: 33%;
+    height: 40%;
+    float: left;
+    position: relative;
+    top:40%;
+    color: #fff;
+    text-align: left;
+    overflow: auto;
+}
+.home-content-text h1, .home-content-text h2{
+    text-transform: uppercase;
+    font-size: 35px;
+}
+.home-content-text h2{
+    color: var(--my-orange);
+    font-weight: normal;
+}
+.home-content-text p{
+    margin-top: 4%;
+    margin-bottom: 4%;
+    font-weight: bold;
+    font-style: italic;
+    
+}
+.home-content-text button{
+    width: 40%;
+    height: 15%;
+    text-align: center;
+    text-transform: capitalize;
+    background-color: rgba(114, 114, 128, 0.623);
+    border:1px #fff solid;
+}
+.home-content-image{
+    width: 60%;
+    height: 70%;
+    background-image: url("../img/img1.jpg");
+    background-size: cover;
+    float: left;
+    margin-left: 5%;
+    margin-top: 10%;
+    position: relative;
+
+}
+.home-content-image:hover .img-info{
+    visibility: visible;
+}
+.img-info{
+    width: 100%;
+    height: 20%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0%;
+    visibility: hidden; 
+}
+.img-info span{
+    display: inline-block;
+    color: #fff;
+    margin-left: 5%;
+    margin-top:3%;
+}
+.img-info .fa-heart,.img-info .fa-commenting{
+    border:1px solid #fff;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    padding: 13px;
+    background-color: transparent;
+}
+.fa-heart:hover, .fa-commenting:hover{
+    color:var(--my-orange);
+    border-color:var(--my-orange) ;
+    cursor: pointer;
+}
+.img-info .inline{
+    display: inline-block;
+    margin-left: 33%;
+    font-size: 10px;
+    text-transform: uppercase;
+    color:#fff;
+}
+.img-info .inline .text{
+    color: var(--my-orange);
+    text-transform: capitalize;
+    font-size: 15px;
+}
+/* end home */
+/* start about */
+.about{
+    width:100%;
+    height: 750px;
+}
+.about .tabs table{
+    margin-top:7%;
+    margin-bottom: 4%;
+    margin-left: 35%;
+}
+.about .tabs table, .about .tabs td{
+    width: 30%;
+    text-align: center;
+    border: 1px solid var(--my-grey);
+    border-collapse: collapse;
+    padding: 1% 2%;
+}
+.about .tabs td{
+    padding:3% 2%;
+}
+.about .tabs td a{
+    color: var(--my-grey);
+}
+.about .tabs td:hover{
+    background-color: var(--my-orange);
+    cursor: pointer;
+}
+.about .tabs td:hover a{
+    color:#fff;
+}
+.offers{
+    height: 50%;
+    margin-bottom:3%;
+}
+.offers .offer-image{
+    position: relative;
+    overflow: hidden;
+    float: left;
+    width:35%;
+    height: 70%;
+}
+.offers .offer-image img{
+    position: absolute;
+    width:80%;
+    height: 200px;
+    border: 3px #fff solid;
+    /* outline: 1px rgba(128, 128, 128, 0.5) solid; */
+}
+.offers .offer-image .up{
+    top:25px;
+}
+.offers .offer-image .down{
+    left: 35px;
+}
+.offers .offer-des{
+    float: left;
+    margin-left: 8%;
+    width: 50%;
+    height: 100%;
+
+}
+.offers .offer-des h3{
+    color:#121213;
+    text-transform: uppercase;
+    font-weight: normal;
+    transform: scaleY(1.2);
+    margin-bottom: 0.8%;
+}
+.offers .offer-des h5{
+    color:var(--my-orange);
+    text-transform: uppercase;
+}
+.offers .offer-des p{
+    color:var(--my-grey);
+    margin:3% 0;
+}
+/* End about */
+
+/* start service */
+.service{
+    width: 100%;
+    height: 800px;
+    background-image: url("../img/Services-bg.jpg");
+}
+.course{
+    /* overflow:hidden; */
+    padding-top:60px;
+    height: 500px;
+    /* background-color: yellow; */
+}
+.course div{
+    float:left;
+    width:15%;
+    height: 400px;
+    margin-left: 8%;
+    position:relative;
+}
+.course div:hover{
+    cursor: pointer;
+}
+.course div:hover .div-content, .course div:hover .course-name{
+    opacity: 1;
+    transition: opacity 0.5s;
+
+}
+.course .dev{
+    background-image: url(../img/Development-bg.jpg);
+    background-size: cover;
+   
+}
+.div-content{
+    display: inline-block;
+    position: absolute;
+    top:40px;
+    left:50%;
+    transform: translate(-50%,0);
+    opacity: 0.5;
+}
+.course>div p{
+    position: absolute;
+    left:50%;
+    top:60%;
+    transform: translate(-50%,0);
+    text-transform: uppercase;
+    text-align:center;
+    color:#fff;
+    opacity: 0.5;
+}
+
+.course .design{
+    background-image: url(../img/desgin-bg.jpg);
+    background-size: cover;
+}
+.course .system{
+    background-image: url(../img/systam-bg.jpg);
+    background-size: cover;
+}
+.course .concept{
+    background-image: url(../img/concept-bg.jpg);
+    background-size: cover;
+}
+/* end service */
+
+/* start pricing */
+.pricing{
+    width: 100%;
+    height: 700px;
+    background-color: rgb(243, 240, 240);
+    font-weight: bolder;
+}
+.pricing .price{
+    width: 100%;
+    height:120px;
+    padding-top:3%;
+    text-transform: uppercase;
+    text-align:center;
+    color:var(--my-grey);
+    border-spacing: 0;
+}
+.pricing .price .first-cell{
+    background-color:var(--my-orange);
+    width:5%;
+    color: #000000e5;
+    font-size: 13px;
+
+}
+.pricing .price .second-cell{
+    color:var(--my-orange);
+    font-size: 25px;
+}
+.pricing .price .second-cell,.pricing .price .last-cell{
+    background-color:#000000e5;
+    width: 20%;
+}
+.pricing .price .last-cell{
+    width:15%;
+    color: rgba(255, 255, 255, 0.863);
+}
+.pricing .td-md-last{
+    width:15%;
+    background-color:rgba(255, 255, 255, 0.897);
+}
+.pricing .td-md{
+    width: 15%;
+    position: relative;
+    background-color:rgba(255, 255, 255, 0.897);
+}
+.pricing .td-md:after{
+    content: "";
+    position: absolute;
+    right    : 0;
+    bottom  : 25%;
+    height  : 50%;
+    width   : 1px;
+    border-right:1px solid var(--my-grey);
+}
+.order{
+    color: rgba(255, 255, 255, 0.863);
+    text-transform: uppercase;
+}
+/* end pricing */
+
+/* start contact */
+.contact{
+    width: 100%;
+    height: 1000px;
+    background-image: url(../img/Contact-bg.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+}
+.contact .contact-info{
+    position: absolute;
+    width:100%;
+    height: 700px;
+    bottom:0;
+    background-color: black;
+    overflow:hidden;
+}
+.contact-info .form-content{
+    width:50%;
+    height: 500px;
+    /* background-color: yellow; */
+    float:left;
+    margin:4% 0;
+}
+.contact-info .form-content input{
+    width:100%;
+    padding: 3% 1%;
+    display:inline-block;
+    margin:2% 0;
+}
+.contact-info .form-content input[ placeholder="Message"]{
+    width:100%;
+    height: 150px;
+ 
+}
+.contact-info .form-content input[type="submit"]{
+    background-color:var(--my-orange);
+    color:#fff;
+    border:none;
+}
+.contact-info .form-content input[type="submit"]:hover{
+    cursor: pointer;
+}
+.contact-info .info-content{
+    width:35%;
+    height: 500px;
+    margin-left: 5%;
+    /* background-color: red; */
+    float:left;
+}
+.info-content h2{
+    color:var(--my-orange);
+    text-transform: uppercase;
+    font-size:30px;
+    transform: scaleY(1.5);
+    margin-top:14%;
+    margin-bottom:10%;
+}
+.info-content .info-table, .info-tabletd{
+    width: 100%;
+    /* border: 1px black solid; */
+    font-size: 15px;
+    color:#fff;
+}
+.info-content .info-table tr:last-child i{
+    margin-left:2%;
+
+}
+.fa-stack-1x {
+    color:white;
+}
+.icon-facebook {
+   color:#3b5998;
+}
+
+.icon-twitter {
+    color:#00aced;
+}
+
+.icon-gplus{
+    color:#dd4b39;
+}
+.list-inline{
+    list-style: none;
+}
+.list-inline li{
+    display: inline-block;
+}
+.info-content .info-table tr td:first-child{
+    width:20%;
+    padding: 5% 0;
+}
+/* end contact */
+
+/* start footer */
+footer{
+    position: relative;
+    overflow:hidden;
+    width: 100%;
+    height: 50px;
+    background-image: url(../img/Get-bg.jpg);
+}
+footer p{
+    position: absolute;
+    color:var(--my-grey);
+    text-transform: uppercase;
+    vertical-align: middle;
+    font-size: 12px;
+    width: 40%;
+    top:50%;
+    left:55%;
+    transform:translate(-50%,-50%);
+}
+/* end footer */
